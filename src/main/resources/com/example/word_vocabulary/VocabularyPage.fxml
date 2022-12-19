@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.word_vocabulary.VocabularyPageController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+
+        <ImageView fitHeight="200.0" fitWidth="425.0" layoutX="0">
+            <image>
+                <Image url = "@vocabulary.jpeg"/>
+            </image>
+        </ImageView>
+
+        <Text layoutX="20" layoutY="40" stroke="greenyellow" strokeType="OUTSIDE" strokeWidth="3">Search for a Word</Text>
+        <TextField fx:id="search" layoutX="20" layoutY="50" promptText="Search"></TextField>
+        <Button layoutX="20" layoutY="80" text="Search" onMouseClicked="#searchButton"></Button>
+
+        <Text layoutX="250" layoutY="40" stroke="greenyellow" strokeType="OUTSIDE" strokeWidth="3">Add a Word to the Vocabulary</Text>
+        <TextField fx:id="word" layoutX="250" layoutY="50" promptText="Enter Word Here"></TextField>
+        <TextField fx:id="meaning" layoutX="250" layoutY="80" promptText="Enter Meaning Here"></TextField>
+        <Button layoutX="250" layoutY="110" text="Add" onMouseClicked="#add"></Button>
+
+        <Text layoutX="90" layoutY="165" stroke="greenyellow" strokeType="OUTSIDE" strokeWidth="3">the Number of Words Stored in Personal Word Vocabulary</Text>
+        <Button layoutX="50" layoutY="150" text="Get" onMouseClicked="#size"></Button>
+    </children>
+</AnchorPane>
