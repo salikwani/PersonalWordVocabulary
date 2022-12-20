@@ -5,12 +5,13 @@ import java.util.HashMap;
 
 public class VocabularySaver {
     private HashMap<String,String> vocabularyList;
-    HashMap<String,String> getVocabularyList(){
-        return vocabularyList;
-    }
     VocabularySaver(){
          vocabularyList = new HashMap<>();
     }
+    HashMap<String,String> getVocabularyList(){
+        return vocabularyList;
+    }
+    
     void serializeHashMap() throws IOException {
         FileOutputStream fos = new FileOutputStream("VocabularyData");
         ObjectOutputStream oos = new ObjectOutputStream(fos);
