@@ -83,7 +83,7 @@ public class VocabularyPageController {
         database.deserializeHashMap();
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setHeaderText("");
-        String a = String.valueOf("There are "+database.getVocabularyList().size()+" Words in Your Personal Vocabulary");
+        String a = String.valueOf("There are "+database.getVocabularyList().size()+" Words in Your Personal Word Vocabulary");
         alert.setContentText(a);
         alert.showAndWait();
     }
